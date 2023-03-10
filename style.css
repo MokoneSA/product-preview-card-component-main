@@ -21,7 +21,6 @@
 
 main {
     width: 600px;
-
     margin: 0 auto;
 }
 
@@ -39,11 +38,13 @@ main {
     background-color: hsl(0, 0%, 100%);
 }
 
-img {
+.cart_image {
     width: 300px;
     height: 450px;
     margin-top: 4px;
     border-radius: 15px 0 0 15px;
+    background-image: url('./images/image-product-desktop.jpg');
+    background-size: cover;
 }
 
 #first-text {
@@ -102,4 +103,97 @@ button {
 
 i {
     margin-right: 8px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .main-container {
+        width: 375px;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .content {
+        width: 300px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart_image {
+        width: 275px;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .right-content {
+        width: 275px;
+        height: 350px;
+        border-radius: 0 0 15px 15px;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    #first-text {
+        font-family: 'Montserrat', sans-serif;
+        font: 500;
+        margin-top: 10px;
+        color: hsl(228, 12%, 48%);
+    }
+    
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Fraunces', sans-serif;
+        width: 270px;
+    }
+    
+    #description {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        width: 230px;
+        color: hsl(228, 12%, 48%);
+        line-height: 20px;
+    }
+    
+    h2 {
+        font-family: 'Fraunces', sans-serif;
+        color: hsla(158, 36%, 37%, 1);
+    }
+    
+    h6 {
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+        margin-left: 10px;
+    }
+    
+    button {
+        background-color: hsla(158, 36%, 37%, 1);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        width: 220px;
+        padding: 15px 32px;
+        margin-bottom: 10px;
+        margin-left: 28px;
+    }
+    
+    i {
+        margin-right: 8px;
+    }
 }
